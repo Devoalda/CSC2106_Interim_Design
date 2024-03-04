@@ -1,0 +1,116 @@
+
+@report{alexander_rpl_2012,
+	title = {{RPL}: {IPv}6 Routing Protocol for Low-Power and Lossy Networks},
+	url = {https://datatracker.ietf.org/doc/rfc6550},
+	shorttitle = {{RPL}},
+	abstract = {Low-Power and Lossy Networks ({LLNs}) are a class of network in which both the routers and their interconnect are constrained. {LLN} routers typically operate with constraints on processing power, memory, and energy (battery power). Their interconnects are characterized by high loss rates, low data rates, and instability. {LLNs} are comprised of anything from a few dozen to thousands of routers. Supported traffic flows include point-to-point (between devices inside the {LLN}), point-to-multipoint (from a central control point to a subset of devices inside the {LLN}), and multipoint-to-point (from devices inside the {LLN} towards a central control point). This document specifies the {IPv}6 Routing Protocol for Low-Power and Lossy Networks ({RPL}), which provides a mechanism whereby multipoint-to-point traffic from devices inside the {LLN} towards a central control point as well as point-to-multipoint traffic from the central control point to the devices inside the {LLN} are supported. Support for point-to-point traffic is also available. [{STANDARDS}-{TRACK}]},
+	number = {{RFC} 6550},
+	institution = {Internet Engineering Task Force},
+	type = {Request for Comments},
+	author = {Alexander, Roger and Brandt, Anders and Vasseur, J. P. and Hui, Jonathan and Pister, Kris and Thubert, Pascal and Levis, P. and Struik, Rene and Kelsey, Richard and Winter, Tim},
+	urldate = {2024-02-12},
+	date = {2012-03},
+	doi = {10.17487/RFC6550},
+	note = {Num Pages: 157},
+}
+
+@article{Kharrufa2019RPL-Based,
+title={RPL-Based Routing Protocols in IoT Applications: A Review},
+author={Harith Kharrufa and H. Al-Kashoash and A. Kemp},
+journal={IEEE Sensors Journal},
+year={2019},
+volume={19},
+pages={5952-5967},
+doi={10.1109/JSEN.2019.2910881}
+}
+
+@inproceedings{kharrufa_dynamic_2017,
+	title = {Dynamic {RPL} for multi-hop routing in {IoT} applications},
+	url = {https://ieeexplore.ieee.org/document/7888753},
+	doi = {10.1109/WONS.2017.7888753},
+	abstract = {The Routing Protocol for Low Power and Lossy Networks ({RPL}) has become the standard routing protocol for the Internet of Things ({IoT}). This paper investigates the use of {RPL} in dynamic networks and presents an enhanced {RPL} for different applications with dynamic mobility and diverse network requirements. This implementation of {RPL} is designed with a new dynamic Objective-Function (D-{OF}) to improve the Packet Delivery Ratio ({PDR}), end-to-end delay and energy consumption while maintaining low packet overhead and loop-avoidance. We propose a controlled reverse-trickle timer based on received signal strength identification ({RSSI}) readings to maintain high responsiveness with minimum overhead and consult the objective function when a movement or an inconsistency is detected to help nodes make an informed decision. Simulations are done using Cooja with random waypoint mobility scenario for healthcare applications considering multi-hop routing. The results show that the proposed dynamic {RPL} (D-{RPL}) adapts to the nodes mobility and has a higher {PDR}, slightly lower end-to-end delay and reasonable energy consumption compared to related existing protocols.},
+	eventtitle = {2017 13th Annual Conference on Wireless On-demand Network Systems and Services ({WONS})},
+	pages = {100--103},
+	booktitle = {2017 13th Annual Conference on Wireless On-demand Network Systems and Services ({WONS})},
+	author = {Kharrufa, Harith and Al-Kashoash, Hayder and Al-Nidawi, Yaarob and Mosquera, Maria Quezada and Kemp, A.H.},
+	urldate = {2024-02-12},
+	date = {2017-02},
+	keywords = {Linear programming, Measurement, Mobile nodes, Protocols, Routing, Wireless sensor networks},
+}
+
+@thesis{rechache_study_2021,
+	title = {Study of Performance Evaluation of {RPL} Objective Functions ({MRHOF} and {OF}0) for {IOTs}},
+	url = {http://dspace.univ-ouargla.dz/jspui/handle/123456789/29110},
+	abstract = {3 
+Abstract 
+{IPv}6 routing protocol for low-power and lossy networks ({RPL}) is a proactive dynamic routing protocol based on {IPV}6 with tow known objective functions ({OFs}): objective function zero ({OF}0) and minimum rank with hysteresis objective function ({MRHOF}). 
+this memoir, provides an overiew of this protocol with a performance study of the two {OFs} used in {RPL}. Several scenarios have been tested with 20,30,40 and 50 nodes, with tow deffernt topologies (random and linear topology) and two parameters of comparisons were selected packet dilevery ratio and power consumption under differnt values of Packet Reception Ratio {RX} (20,40,60,80 and 100) in order to have an idea of suitability performance of {RPL} in each scenario. 
+The simulation is done using the cooja simulator in our implementation cooja is a flexible java-based simulator which support C java native interface. We have chosen a cooja simulator as it is a very useful tool for software development in wireless sensor networks and will provide a suitable method in which to set the environment needs.},
+	institution = {{UNIVERSITY} {OF} {KASDI} {MERBAH} {OUARGLA}},
+	type = {Thesis},
+	author = {Rechache, Manar},
+	urldate = {2024-02-11},
+	date = {2021},
+	langid = {english},
+	note = {Accepted: 2022-05-23T07:21:53Z},
+}
+
+@article{arena_evaluating_2020,
+	title = {Evaluating and improving the scalability of {RPL} security in the Internet of Things},
+	volume = {151},
+	issn = {0140-3664},
+	url = {https://www.sciencedirect.com/science/article/pii/S0140366419307479},
+	doi = {10.1016/j.comcom.2019.12.062},
+	abstract = {Wireless Sensor and Actuator Networks ({WSANs}) will represent a key building block for the future Internet of Things, as a cheap and easily-deployable technology to connect smart devices on a large scale. In {WSAN} the Routing Protocol for Low-Power and Lossy Networks ({RPL}) has a crucial role as the standard {IPv}6-based routing protocol. {RPL} specifications define a basic set of security features, without which it would be open to disruptive routing attacks. However, the impact of these features on the {WSAN} performance has not been thoroughly investigated yet. The contribution of this paper is two-fold. First, we extensively evaluate the impact of security mechanisms on the scalability of {WSANs} by means of both simulations and real experiments. We show that the protection against eavesdropping and forgery has a modest impact on the performance, whereas the protection against replay has a more considerable impact, especially on the network formation time which increases noticeably. Despite this, we show that protecting against replay reduces the number of control messages exchanged and improves routes optimality. For these reasons, we recommend to always use the security mechanisms. Finally, we propose a standard-compliant optimization for defending against replay that reduces the impact on the overall performance.},
+	pages = {119--132},
+	journaltitle = {Computer Communications},
+	shortjournal = {Computer Communications},
+	author = {Arena, Antonio and Perazzo, Pericle and Vallati, Carlo and Dini, Gianluca and Anastasi, Giuseppe},
+	urldate = {2024-02-12},
+	date = {2020-02-01},
+	keywords = {Embedded systems, Internet of Things, Performance evaluation, {RPL}, Secure routing},
+}
+
+
+@Article{info8040124,
+  AUTHOR = {Zhu, Licai and Wang, Ruchuan and Yang, Hao},
+  TITLE = {Multi-Path Data Distribution Mechanism Based on RPL for Energy Consumption and Time Delay},
+  JOURNAL = {Information},
+  VOLUME = {8},
+  YEAR = {2017},
+  NUMBER = {4},
+  ARTICLE-NUMBER = {124},
+  URL = {https://www.mdpi.com/2078-2489/8/4/124},
+  ISSN = {2078-2489},
+  ABSTRACT = {The RPL (Routing Protocol for LLN) protocol is a routing protocol for low power and lossy networks. In such a network, energy is a very scarce resource, so many studies are focused on minimizing global energy consumption. End-to-end latency is another important performance indicator of the network, but existing research tends to focus more on energy consumption and ignore the end-to-end delay of data transmission. In this paper, we propose a kind of energy equalization routing protocol to maximize the surviving time of the restricted nodes so that the energy consumed by each node is close to each other. At the same time, a multi-path forwarding route is proposed based on the cache utilization. The data is sent to the sink node through different parent nodes at a certain probability, not only by selecting the preferred parent node, thus avoiding buffer overflow and reducing end-to-end delay. Finally, the two algorithms are combined to accommodate different application scenarios. The experimental results show that the proposed three improved schemes improve the reliability of the routing, extend the lifetime of the network, reduce the end-to-end delay, and reduce the number of DAG reconfigurations.},
+  DOI = {10.3390/info8040124}
+}
+
+@article{mayzaud_distributed_2017,
+	title = {A Distributed Monitoring Strategy for Detecting Version Number Attacks in {RPL}-Based Networks},
+	volume = {14},
+	issn = {1932-4537},
+	url = {https://ieeexplore.ieee.org/document/7930501},
+	doi = {10.1109/TNSM.2017.2705290},
+	abstract = {The Internet of Things is characterized by the large-scale deployment of low power and lossy networks ({LLN}), interconnecting pervasive objects. The routing protocol for {LLN} ({RPL}) protocol has been standardized by {IETF} to enable a lightweight and robust routing in these constrained networks. A versioning mechanism is incorporated into {RPL} in order to maintain an optimized topology. However, an attacker can exploit this mechanism to significantly damage the network and reduce its lifetime. After analyzing and comparing existing work, we propose in this paper a monitoring strategy with dedicated algorithms for detecting such attacks and identifying the involved malicious nodes. The performance of this solution is evaluated through extensive experiments, and its scalability is quantified with the support of a monitoring node placement optimization method.},
+	pages = {472--486},
+	number = {2},
+	journaltitle = {{IEEE} Transactions on Network and Service Management},
+	author = {Mayzaud, Anthéa and Badonnel, Rémi and Chrisment, Isabelle},
+	urldate = {2024-02-12},
+	date = {2017-06},
+	note = {Conference Name: {IEEE} Transactions on Network and Service Management},
+	keywords = {Internet of Things, Maintenance engineering, Monitoring, Network topology, Protocols, {RPL}, Security, Security management, Topology},
+}
+
+@ARTICLE{8998289,
+  author={Verma, Abhishek and Ranga, Virender},
+  journal={IEEE Sensors Journal}, 
+  title={Security of RPL Based 6LoWPAN Networks in the Internet of Things: A Review}, 
+  year={2020},
+  volume={20},
+  number={11},
+  pages={5666-5690},
+  keywords={Security;Routing;Wireless sensor networks;Taxonomy;Routing protocols;Sensors;Internet of Things;RPL;6LoWPAN;LLN;network security},
+  doi={10.1109/JSEN.2020.2973677}
+}
