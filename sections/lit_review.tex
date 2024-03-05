@@ -2,22 +2,25 @@
 \section*{Literature Review}\label{sec:lr}
 
 % JW LR %
-\subsection*{Routing Protocol for Low Power Lossy Networks (RPL)}\label{sec:lr_rpl}
+\subsection{Routing Protocol for Low Power Lossy Networks (RPL)}\label{sec:lr_rpl}
 
-Designing a robust and efficient mesh network for real-time environmental monitoring poses unique challenges due to the resource-constrained nature of wireless sensor networks (WSNs). The Routing Protocol for Low-Power and Lossy Networks (RPL), a proactive routing protocol \cite{rechache_study_2021}, emerges as a promising candidate, addressing these challenges head-on with its standardized approach, dynamic routing capabilities, and energy-efficient design \cite{alexander_rpl_2012, Kharrufa2019RPL-Based}. Notably, RPL aligns well with our project's key objectives of scalability, reliability, and sustainability.
+Designing a robust and efficient mesh network for real-time environmental monitoring using Wireless Sensor Networks (WSNs) faces challenges due to resource constraints. RPL emerges as a promising solution \cite{rechache_study_2021, alexander_rpl_2012, Kharrufa2019RPL-Based}, offering dynamic routing, energy efficiency \cite{info8040124}, and scalability. D-RPL enhances multihop routing \cite{kharrufa_dynamic_2017}. Security concerns \cite{arena_evaluating_2020, mayzaud_distributed_2017, 8998289} and protocol complexity \cite{kharrufa_dynamic_2017} require attention. Optimizing RPL's features can facilitate timely data collection in dynamic environments, contributing to successful monitoring applications.
 
-One of RPL's critical strengths lies in its ability to dynamically adapt to network changes. An adaptation mentioned in \cite{kharrufa_dynamic_2017}, D-RPL, optimises multihop routing, guaranteeing reliable data collection even when nodes fail or move, or new ones are deployed, a crucial feature for real-time environmental monitoring where network conditions are constantly shifting.
 
-Furthermore, RPL prioritizes energy efficiency \cite{info8040124}. By employing energy-aware path selection and minimizing control overhead, RPL extends the lifespan of individual nodes and the overall network, a significant advantage in resource-constrained environments.
+% Designing a robust and efficient mesh network for real-time environmental monitoring poses unique challenges due to the resource-constrained nature of wireless sensor networks (WSNs). The Routing Protocol for Low-Power and Lossy Networks (RPL), a proactive routing protocol \cite{rechache_study_2021}, emerges as a promising candidate, addressing these challenges head-on with its standardized approach, dynamic routing capabilities, and energy-efficient design \cite{alexander_rpl_2012, Kharrufa2019RPL-Based}. Notably, RPL aligns well with our project's key objectives of scalability, reliability, and sustainability.
 
-Finally, RPL exhibits excellent scalability, making it suitable for large-scale WSNs like the one envisioned for the application. Its hierarchical design effectively handles complex network structures, ensuring efficient data routing even as the network grows in size and complexity.
+% One of RPL's critical strengths lies in its ability to dynamically adapt to network changes. An adaptation mentioned in \cite{kharrufa_dynamic_2017}, D-RPL, optimises multihop routing, guaranteeing reliable data collection even when nodes fail or move, or new ones are deployed, a crucial feature for real-time monitoring systems where network conditions are constantly shifting.
 
-While RPL boasts significant advantages, careful consideration must be given to its limitations before implementation. Security measures require meticulous implementation to address potential vulnerabilities in resource-constrained environments \cite{arena_evaluating_2020, mayzaud_distributed_2017, 8998289}. Additionally, RPL's dynamic nature can introduce complexity and overhead compared to simpler protocols, demanding thoughtful analysis and optimization.
+% Furthermore, RPL prioritizes energy efficiency \cite{info8040124}. By employing energy-aware path selection and minimizing control overhead, RPL extends the lifespan of individual nodes and the overall network, a significant advantage in resource-constrained environments.
 
-Balancing RPL's strengths with its limitations is crucial. Its dynamic routing, energy efficiency, and scalability hold immense potential for achieving our project's goals. Leveraging RPL's features, particularly its dynamic routing and multipathing capabilities, promises timely data collection even in dynamic network environments, contributing to a successful monitoring application. Further investigation and experimentation are necessary to determine the optimal configuration and potential adaptations required for RPL to seamlessly integrate into our specific project and effectively meet the desired outcomes.
+% Finally, RPL exhibits excellent scalability, making it suitable for large-scale WSNs. Its hierarchical design effectively handles complex network structures, ensuring efficient data routing even as the network grows in size and complexity.
+
+% While RPL boasts significant advantages, careful consideration must be given to its limitations before implementation. Security measures require meticulous implementation to address potential vulnerabilities in resource-constrained environments \cite{arena_evaluating_2020, mayzaud_distributed_2017, 8998289}. Additionally, RPL's dynamic nature can introduce complexity and overhead compared to simpler protocols, demanding thoughtful analysis and optimization.
+
+% Balancing RPL's strengths with its limitations is crucial. Its dynamic routing, energy efficiency, and scalability hold immense potential for achieving our project's goals. Leveraging RPL's features, particularly its dynamic routing and multipathing capabilities, promises timely data collection even in dynamic network environments, contributing to a successful monitoring application. Further investigation and experimentation are necessary to determine the optimal configuration and potential adaptations required for RPL to seamlessly integrate into our specific project and effectively meet the desired outcomes.
 
 % Ben's LR %
-\section*{Ad hoc On-Demand Distance Vector routing protocol (AODV)}\label{sec:lit_review}
+\section{Ad hoc On-Demand Distance Vector routing protocol (AODV)}\label{sec:lr_aodv}
 
 Various solutions have emerged to address the problem at hand, such as integrating Long-Range (LoRa) networks with mesh architecture \cite{8326735, s21134314}. This approach enhances LoRa networks by enabling the creation of mesh structures capable of routing data packets through multiple intermediate nodes \cite{8324573}. Through hardware and algorithmic enhancements, this solution facilitates robust connectivity and efficient data transmission paths, overcoming the limitations of traditional point-to-point connectivity in LoRa architectures.
 
@@ -28,7 +31,7 @@ However, despite its merits, the AODV protocol has limitations. The overhead ass
 In conclusion, the integration of LoRa with mesh offers a promising solution to the problem, enhancing connectivity and enabling efficient data transmission. The AODV algorithm stands out for optimizing resource utilization in low-power, long-range networks. Despite challenges like overhead and potential congestion, AODV shows potential to contribute significantly to environmental sustainability goals by providing robust data transmission pathways for monitoring CO2 emissions and temperature fluctuations in urban areas.
 
 % Jovian LR %
-\section*{Hybrid Wireless Mesh Protocol (HWMP)}\label{sec:lit_review}
+\section{Hybrid Wireless Mesh Protocol (HWMP)}\label{sec:lr_hwmp}
 
 The Hybrid Wireless Mesh Protocol (HWMP), outlined in the IEEE 802.11s standard, is a crucial solution for the proposed mesh network \cite{Yang_Ma_Miao_2009}. Its hybrid design, combining proactive and reactive elements, meets dynamic urban environmental monitoring needs. HWMP's adaptability to changing network conditions is vital for real-time monitoring of CO2 and temperature data \cite{4428721}. In the campus setting, where network dynamics shift rapidly, HWMP's flexibility ensures continuous and reliable data transmission. 
 
@@ -41,7 +44,7 @@ However, HWMP's implementation introduces challenges. While the hybrid approach 
 In conclusion, leveraging HWMP in the proposed mesh network is a promising opportunity to bridge the data gap in environmental monitoring on the NYP campus. Its adaptability, scalability, and standardized framework align with the project's goals. However, addressing challenges related to implementation complexity, proactive elements, and expert knowledge requirements is critical to maximizing HWMP's effectiveness in contributing to Singapore's sustainable urban future.
 
 % Richie LR %
-\section*{Dynamic Source Routing (DSR)}\label{sec:lit_review}
+\section{Dynamic Source Routing (DSR)}\label{sec:lr_dsr}
 Dynamic Source Routing (DSR) protocol is a reactive mesh networking algorithm. This approach significantly reduces unnecessary data transmissions, aligning well with projects that do not require real-time data processing \cite{5431521}. Although the on-demand nature of DSR introduces latency during the route discovery process, such delays are not a concern for environmental data collection aimed at analysis, where immediate data retrieval is not critical.
 
 One potential challenge is its scalability limitations due to the use of a flooding mechanism for route discovery. In extensive networks, this can lead to increased loads on individual nodes, affecting their performance in terms of processing capabilities, latency \cite{6488843}, and energy consumption \cite{energy,1431308}. However, for the proposed project, where the network's configuration remains static after deployment to ensure data consistency, and the scale of the network is moderate, such scalability issues are mitigated.
@@ -53,7 +56,7 @@ Energy efficiency, derive from the absence of periodic route updates, is another
 The use of route caching also contributes to the network's reliability. By maintaining multiple routes to destinations, nodes can swiftly switch to an alternative path in case of route failure, avoiding the latency associated with initiating a new route discovery \cite{1431308}.
 
 % XY LR %
-\subsection*{Optimised Link State Routing (OLSR)}
+\subsection{Optimised Link State Routing (OLSR)}\label{sec:lr_oslr}
 
 In networks using the Optimised Link State Routing (OLSR) routing protocol, each node selects a neighbor that is directly reachable (one hop away) when transmitting data packets. These selected neighbors form a set known as Multi-Point Relay (MPR). Only nodes in the MPR set are responsible for forwarding messages, ensuring efficient packet transmission\cite{Kakade2017Performance} \cite{OLSR_IETF}. MPR nodes are chosen to cover as many other nodes as possible within one hop, optimizing network coverage\cite{Ahn2014}. 
 In an island wide C02  Monitoring deployment using OLSR, the scalability of OLSR would highly benefit the how well it is suited for large scale networks with its efficient routing table management and can reliably forward packets . 
@@ -64,6 +67,9 @@ While security is not inherent in OLSR, encryption and firewall and access contr
 Overall, Optimized Link State Routing protocol offers several advantages such as scalability, reliability, and low latency, its suitability for large-scale deployment in IoT CO2 monitoring applications.
 
 
+\subsection{Summary}\label{sec:lr_summary}
+
+In a WSN dedicated to environmental monitoring, AODV's on-demand routing and DSR's flexibility offer adaptability to dynamic conditions \cite{BELDINGROYER2003125, 5431521}. HWMP's standardized framework ensures interoperability, scalability, and adaptability \cite{Yang_Ma_Miao_2009}. OLSR balances scalability, reliability, and low latency \cite{Kakade2017Performance, OLSR_IETF}. RPL, with its dynamic routing and energy efficiency, presents another option \cite{rechache_study_2021, alexander_rpl_2012, Kharrufa2019RPL-Based}. Each mesh algorithm caters to specific needs, from efficient resource utilization to standardized interoperability, providing tailored solutions for diverse project requirements.
 
 
 
