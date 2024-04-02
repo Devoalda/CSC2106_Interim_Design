@@ -1,6 +1,6 @@
 \documentclass[
   conference, 
-  draft % remove this for final version
+%   draft % remove this for final version
 ]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
@@ -17,7 +17,8 @@
 
 \usepackage{textcomp}
 \usepackage{xcolor}
-
+\usepackage[section]{placeins}
+\usepackage{float}
 
 \usepackage[
 backend=biber,
@@ -28,7 +29,7 @@ style=ieee,
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{T24 Interim Design Review Report
+\title{T24 Final Design Review Report
 }
 
 \author{
@@ -102,5 +103,8 @@ KEYWORDS
 
 \newpage
 \printbibliography
+
+\appendix
+\import{sections/}{appendix}
 
 \end{document}

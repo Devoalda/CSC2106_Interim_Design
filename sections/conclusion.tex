@@ -1,2 +1,25 @@
-\section*{Conclusion}\label{sec:conclusion}
+\section{Conclusion}\label{sec:conclusion}
 
+\subsection{Use Case}
+
+Our solution embodies a versatile application spectrum, catering adeptly to both research and practical scenarios. It facilitates comprehensive comparisons of latency, throughput, and bandwidth between the LoRa and ESP-NOW protocols, offering a framework easily adaptable to other protocol pairs such as Bluetooth Low Energy (BLE) and Zigbee. The Kibana dashboard serves as an intuitive visualization platform for protocol usage and sensor data, showcasing scalability to manage substantial data loads. Leveraging this data, predictive models, such as weather forecasting, can be trained, significantly broadening the solution's utility.
+
+In practical contexts, our solution presents potential enhancements to communication infrastructures in government enforcement agencies like the military and police. Its reactive nature ensures seamless network adaptation, crucial for scenarios demanding swift failover mechanisms. For instance, in military logistics, real-time metadata collection—such as vehicle speed and location—can streamline operational planning. Our solution enables this by leveraging both ESP-NOW for short-range communication and LoRa for broader deployments, facilitating data transmission to a central server for analysis and decision-making.
+
+While the implementation employs an MCU supporting both LoRa and ESP-Now, other implementations replicating this solution would similarly need to consider MCU capabilities for their respective use cases. Utilizing BLE and Zigbee could mirror ESP-NOW and LoRa, where either protocol can be toggled depending on the distance between endpoints. However, the comprehensive implementation must also account for potential clashes in protocol technologies. 
+
+\subsection{Future Works}
+
+The current implementation of the ESP-NOW mesh serves as an effective short to medium-distance communication solution, seamlessly transitioning to LoRa for extended-range mesh communications within a Wireless Sensor Network (WSN). However, there are areas for future enhancement and refinement to maximize the network's capabilities.
+
+One key area for improvement is the implementation of routing based on hop count and the introduction of health checks for network stability. These enhancements were not feasible within the initial implementation due to time constraints but could significantly improve the efficiency and reliability of the network.
+
+In addition, addressing the observed slight packet reception discrepancies between LoRa and ESP-NOW meshes requires further investigation. This may involve exploring factors such as protocol and mesh algorithm implementations, as well as inherent differences in transmission rates, to ensure optimal performance across both protocols.
+
+Furthermore, streamlining protocol switching through the master node presents an opportunity to enhance overall system efficiency and control. By optimizing the switching process, the network can adapt more seamlessly to changing conditions and communication requirements.
+
+While the current implementation focuses on a specific use case - a sensor collection mesh network - future iterations could explore broader applications and configurations. For instance, considering a fully implemented Dynamic Source Routing (DSR) algorithm for both protocols and implementing an election algorithm to select a master node with internet connectivity could automate mesh construction and data collection processes.
+
+Moreover, the potential integration of a LoRaWAN gateway as the internet-connecting node opens up possibilities for transmitting data to a centralized database for analysis. Additionally, exploring the feasibility of a hybrid mesh network, where switching occurs between specific nodes rather than the entire network, could further optimize communication efficiency.
+
+In summary, the multi-protocol mesh network with reactive switching algorithm presents significant potential for enhancement and customization to meet specific use cases. By addressing the identified areas for improvement and exploring new configurations, the network can achieve greater reliability, efficiency, and adaptability in diverse environments.
