@@ -29,8 +29,7 @@ style=ieee,
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{T24 Final Design Review Report
-}
+\title{T24: Dynamic Mesh Wireless Sensor Collection Network}
 
 \author{
 
@@ -84,11 +83,16 @@ Glasgow,\\
 
 
 \begin{abstract}
-  ABSTRACT
+  
+Wireless Sensor Networks (WSNs) are pivotal for real-time environmental monitoring applications. This paper delves into the detailed architecture and performance analysis of two prominent protocols, ESP-NOW and LoRa, within the context of a WSN setup. The ESP-NOW protocol, utilizing a Dynamic Source Routing (DSR) mesh algorithm, excels in throughput, latency, and bandwidth compared to LoRa, making it suitable for high-speed, low-latency communication needs. Conversely, LoRa demonstrates advantages in long-range communication and obstacle penetration. 
+
+Additionally, the analysis delves into power consumption, where ESP-NOW outshines LoRa in both idle and active network states. This energy efficiency of ESP-NOW is particularly advantageous for battery-operated devices and remote deployments. 
+
+The findings presented herein provide valuable insights for optimizing protocol selection and power management strategies in WSN deployments, ensuring efficient and reliable data transmission in diverse environmental monitoring scenarios.
 \end{abstract}
 
 \begin{IEEEkeywords}
-KEYWORDS
+WSN, LoRa, ESP-NOW, Mesh, ELK, MQTT
 \end{IEEEkeywords}
 
 \import{sections/}{introduction}
@@ -99,11 +103,14 @@ KEYWORDS
 
 \import{sections/}{implementation}
 
+\import{sections/}{analysis}
+
 \import{sections/}{conclusion}
 
 \newpage
 \printbibliography
 
+\newpage
 \appendix
 \import{sections/}{appendix}
 
